@@ -10,7 +10,6 @@ const bottomContainerColor = Color(0xFFeb1555);
 const bottomContainerHeight = 80.0;
 
 enum Gender {
-  none,
   male,
   female,
 }
@@ -21,7 +20,7 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
-  Gender selectedGender = Gender.none;
+  Gender? selectedGender;
 
   @override
   Widget build(BuildContext context) {
